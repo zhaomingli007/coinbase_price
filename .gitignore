@@ -1,0 +1,16 @@
+**/*.log
+**/metastore_db
+.DS_Store
+.dotty-ide-disabled
+.history/
+.vscode/
+target/
+**/sbt-dist/
+**/.JETEmitters
+**/.Java
+**/.metadata
+**/.settings
+**/poms/
+**/temp/
+**/sqlPatterns
+**/routines/

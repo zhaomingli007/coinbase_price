@@ -1,0 +1,30 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# An example controller showing a sample home page
+GET     /                           controllers.HomeController.index
+# An example controller showing how to use dependency injection
+GET     /count                      controllers.CountController.count
+# An example controller showing how to write asynchronous code
+GET     /message                    controllers.AsyncController.message
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(file)
+
+
+# Get last week/month prices movement
+GET /prices/lastweek               controllers.PriceController.getPricesLastWeek()
+
+GET /prices/lastmonth              controllers.PriceController.getPricesLastMonth()
+
+#Get prices between two customized dates
+POST /prices/:start/:end            controllers.PriceController.getPricesBetween(start: Date, end: Date)
+
+#Get X days moving average prices between two customized dates
+POST /prices/:xday/:start/:end      controllers.PriceController.getAverageXDaysPricesBetween(xday: Int, start: Date, end: Date)
+
+#Get 15 forecast prices
+GET /prices/forecast         controllers.PriceController.getForecastedPrices()
+
+
