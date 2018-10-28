@@ -42,7 +42,7 @@ ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 
 
 #Copy spark library to image
-COPY docker_build/spark-2.2.1-bin-hadoop2.7 /workspace/tools/
+COPY docker_build/spark-2.2.1-bin-hadoop2.7 /workspace/tools/spark-2.2.1-bin-hadoop2.7
 
 #Copy start scripts
 COPY docker_build/run_pipeline.sh /workspace/tools/
