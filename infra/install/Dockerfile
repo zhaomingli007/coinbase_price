@@ -46,6 +46,8 @@ COPY docker_build/spark-2.2.1-bin-hadoop2.7 /workspace/tools/spark-2.2.1-bin-had
 
 #Copy historical data
 COPY docker_build/datalake /workspace/data/datalake
+COPY docker_build/model /workspace/data/model
+COPY docker_build/forecast /workspace/data/forecast
 
 #Copy start scripts
 COPY run_pipeline.sh /workspace/tools/
