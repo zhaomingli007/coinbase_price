@@ -44,9 +44,12 @@ ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 #Copy spark library to image
 COPY docker_build/spark-2.2.1-bin-hadoop2.7 /workspace/tools/spark-2.2.1-bin-hadoop2.7
 
+#Copy historical data
+COPY docker_build/datalake /workspace/data/datalake
+
 #Copy start scripts
-COPY docker_build/run_pipeline.sh /workspace/tools/
-COPY docker_build/run_play.sh /workspace/tools/
+COPY run_pipeline.sh /workspace/tools/
+COPY run_play.sh /workspace/tools/
 
 # Define default command.
 CMD ["bash"]

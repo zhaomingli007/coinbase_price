@@ -3,7 +3,7 @@
   <context confirmationNeeded="false" name="prod">
     <contextParameter comment="" name="data_dir" prompt="data_dir?" promptNeeded="false" repositoryContextId="_dHAzsNnSEeiIBOWq0qdbcg" type="id_String" value="/workspace/data/"/>
     <contextParameter comment="" name="python" prompt="python?" promptNeeded="false" repositoryContextId="_dHAzsNnSEeiIBOWq0qdbcg" type="id_String" value="python"/>
-    <contextParameter comment="" name="workspace" prompt="workspace?" promptNeeded="false" repositoryContextId="_dHAzsNnSEeiIBOWq0qdbcg" type="id_String" value="/workspace/coinbase_price/"/>
+    <contextParameter comment="" name="workspace" prompt="workspace?" promptNeeded="false" repositoryContextId="_dHAzsNnSEeiIBOWq0qdbcg" type="id_String" value="/workspace/code/coinbase_price/"/>
   </context>
   <context confirmationNeeded="false" name="dev">
     <contextParameter comment="" name="data_dir" prompt="data_dir?" promptNeeded="false" repositoryContextId="_dHAzsNnSEeiIBOWq0qdbcg" type="id_String" value="/tmp/"/>

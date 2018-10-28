@@ -4,7 +4,7 @@
     <contextParameter comment="" name="currentDate" prompt="currentDate?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="data_dir" prompt="data_dir?" promptNeeded="false" repositoryContextId="_dHAzsNnSEeiIBOWq0qdbcg" type="id_String" value="/workspace/data/"/>
     <contextParameter comment="" name="sparkshell" prompt="sparkshell?" promptNeeded="false" repositoryContextId="_dHAzsNnSEeiIBOWq0qdbcg" type="id_String" value="/workspace/tools/spark-2.2.1-bin-hadoop2.7/bin/spark-shell"/>
-    <contextParameter comment="" name="workspace" prompt="workspace?" promptNeeded="false" repositoryContextId="_dHAzsNnSEeiIBOWq0qdbcg" type="id_String" value="/workspace/coinbase_price/"/>
+    <contextParameter comment="" name="workspace" prompt="workspace?" promptNeeded="false" repositoryContextId="_dHAzsNnSEeiIBOWq0qdbcg" type="id_String" value="/workspace/code/coinbase_price/"/>
     <contextParameter comment="" name="mysql8_Port" prompt="mysql8_Port?" promptNeeded="false" repositoryContextId="_cNr4YNppEeiIBOWq0qdbcg" type="id_String" value="3306"/>
     <contextParameter comment="" name="mysql8_Server" prompt="mysql8_Server?" promptNeeded="false" repositoryContextId="_cNr4YNppEeiIBOWq0qdbcg" type="id_String" value="coinbase-mysql"/>
     <contextParameter comment="" name="mysql8_Login" prompt="mysql8_Login?" promptNeeded="false" repositoryContextId="_cNr4YNppEeiIBOWq0qdbcg" type="id_String" value="root"/>
