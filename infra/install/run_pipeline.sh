@@ -9,4 +9,6 @@ chmod -R +rx ./talend_runtime
 talend_runtime/main_pipeline/main_pipeline_run.sh -> main_pipeline_run.log
 
 #schedule
-0 23 * * * bash talend_runtime/main_pipeline/main_pipeline_run.sh -> main_pipeline_run.log
+echo "0 23 * * * bash /workspace/code/talend_runtime/main_pipeline/main_pipeline_run.sh" > mycron
+crontab mycron
+rm mycron

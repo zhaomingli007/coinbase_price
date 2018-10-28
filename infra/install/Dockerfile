@@ -12,34 +12,32 @@ WORKDIR workspace/
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-#Install java, sbt and git
+#Install java, git
 # Install Java.
-# Env variables
-ENV SCALA_VERSION 2.12.7
-ENV SBT_VERSION 1.2.6
 RUN \
   echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | debconf-set-selections && \
   apt-get update && \  
+  apt-get install -y unzip && \
+  apt-get install -y git
+
+RUN \
   DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends apt-utils && \
   apt-get install -y software-properties-common && \
-  apt-get install apt-utils && \
   add-apt-repository -y ppa:webupd8team/java && \
   apt-get update && \
   apt-get install --allow-unauthenticated -y oracle-java8-installer && \
   rm -rf /var/lib/apt/lists/* && \
-  rm -rf /var/cache/oracle-jdk8-installer && \
-  apt-get install -y git && \
-  curl -L -o sbt-$SBT_VERSION.deb http://dl.bintray.com/sbt/debian/sbt-$SBT_VERSION.deb && \
-  dpkg -i sbt-$SBT_VERSION.deb && \
-  rm sbt-$SBT_VERSION.deb && \
-  apt-get install sbt && \
-  apt-get update && \  
-  apt-get install -y unzip && \
-  sbt sbtVersion  
+  rm -rf /var/cache/oracle-jdk8-installer
 
 # Define commonly used JAVA_HOME variable
 ENV JAVA_HOME /usr/lib/jvm/java-8-oracle  
 
+RUN \
+  curl -L -o sbt.deb http://dl.bintray.com/sbt/debian/sbt-1.2.6.deb && \
+  DEBIAN_FRONTEND=noninteractive && \
+  dpkg -i sbt.deb && \
+  apt-get update && \
+  sbt sbtVersion
 
 #Copy spark library to image
 COPY docker_build/spark-2.2.1-bin-hadoop2.7 /workspace/tools/spark-2.2.1-bin-hadoop2.7
