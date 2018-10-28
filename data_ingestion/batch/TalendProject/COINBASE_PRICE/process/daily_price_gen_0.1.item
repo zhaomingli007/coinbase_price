@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="dev" jobType="Standard">
   <context confirmationNeeded="false" name="prod">
-    <contextParameter comment="" name="data_dir" prompt="data_dir?" promptNeeded="false" repositoryContextId="_dHAzsNnSEeiIBOWq0qdbcg" type="id_String" value=""/>
-    <contextParameter comment="" name="python" prompt="python?" promptNeeded="false" repositoryContextId="_dHAzsNnSEeiIBOWq0qdbcg" type="id_String" value=""/>
-    <contextParameter comment="" name="workspace" prompt="workspace?" promptNeeded="false" repositoryContextId="_dHAzsNnSEeiIBOWq0qdbcg" type="id_String" value=""/>
+    <contextParameter comment="" name="data_dir" prompt="data_dir?" promptNeeded="false" repositoryContextId="_dHAzsNnSEeiIBOWq0qdbcg" type="id_String" value="/workspace/data/"/>
+    <contextParameter comment="" name="python" prompt="python?" promptNeeded="false" repositoryContextId="_dHAzsNnSEeiIBOWq0qdbcg" type="id_String" value="python"/>
+    <contextParameter comment="" name="workspace" prompt="workspace?" promptNeeded="false" repositoryContextId="_dHAzsNnSEeiIBOWq0qdbcg" type="id_String" value="/workspace/coinbase_price/"/>
   </context>
   <context confirmationNeeded="false" name="dev">
     <contextParameter comment="" name="data_dir" prompt="data_dir?" promptNeeded="false" repositoryContextId="_dHAzsNnSEeiIBOWq0qdbcg" type="id_String" value="/tmp/"/>

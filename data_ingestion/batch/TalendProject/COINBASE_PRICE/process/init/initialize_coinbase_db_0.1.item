@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="dev" jobType="Standard">
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="data_dir" prompt="data_dir?" promptNeeded="false" repositoryContextId="_dHAzsNnSEeiIBOWq0qdbcg" type="id_String" value="/tmp/"/>
+    <contextParameter comment="" name="sparkshell" prompt="sparkshell?" promptNeeded="false" repositoryContextId="_dHAzsNnSEeiIBOWq0qdbcg" type="id_String" value="/Users/zhao/software/spark/spark-2.2.1-bin-hadoop2.7/bin/spark-shell"/>
+    <contextParameter comment="" name="workspace" prompt="workspace?" promptNeeded="false" repositoryContextId="_dHAzsNnSEeiIBOWq0qdbcg" type="id_String" value="/Users/zhao/codebase/coinbase_price"/>
+    <contextParameter comment="" name="mysql8_AdditionalParams" prompt="mysql8_AdditionalParams?" promptNeeded="false" repositoryContextId="_cNr4YNppEeiIBOWq0qdbcg" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter comment="" name="mysql8_Database" prompt="mysql8_Database?" promptNeeded="false" repositoryContextId="_cNr4YNppEeiIBOWq0qdbcg" type="id_String" value="coinbase"/>
+    <contextParameter comment="" name="mysql8_Login" prompt="mysql8_Login?" promptNeeded="false" repositoryContextId="_cNr4YNppEeiIBOWq0qdbcg" type="id_String" value="root"/>
+    <contextParameter comment="" name="mysql8_Password" prompt="mysql8_Password?" promptNeeded="false" repositoryContextId="_cNr4YNppEeiIBOWq0qdbcg" type="id_Password" value="vrEiLjLcMhZEN9Hte10BCA=="/>
+    <contextParameter comment="" name="mysql8_Port" prompt="mysql8_Port?" promptNeeded="false" repositoryContextId="_cNr4YNppEeiIBOWq0qdbcg" type="id_String" value="3307"/>
+    <contextParameter comment="" name="mysql8_Server" prompt="mysql8_Server?" promptNeeded="false" repositoryContextId="_cNr4YNppEeiIBOWq0qdbcg" type="id_String" value="127.0.0.1"/>
+  </context>
   <context confirmationNeeded="false" name="prod">
     <contextParameter comment="" name="data_dir" prompt="data_dir?" promptNeeded="false" repositoryContextId="_dHAzsNnSEeiIBOWq0qdbcg" type="id_String" value="/workspace/data/"/>
-    <contextParameter comment="" name="python" prompt="python?" promptNeeded="false" repositoryContextId="_dHAzsNnSEeiIBOWq0qdbcg" type="id_String" value="python"/>
     <contextParameter comment="" name="sparkshell" prompt="sparkshell?" promptNeeded="false" repositoryContextId="_dHAzsNnSEeiIBOWq0qdbcg" type="id_String" value="/workspace/tools/spark-2.2.1-bin-hadoop2.7/bin/spark-shell"/>
     <contextParameter comment="" name="workspace" prompt="workspace?" promptNeeded="false" repositoryContextId="_dHAzsNnSEeiIBOWq0qdbcg" type="id_String" value="/workspace/coinbase_price/"/>
     <contextParameter comment="" name="mysql8_AdditionalParams" prompt="mysql8_AdditionalParams?" promptNeeded="false" repositoryContextId="_cNr4YNppEeiIBOWq0qdbcg" type="id_String" value="noDatetimeStringSync=true"/>
@@ -14,7 +24,6 @@
   </context>
   <context confirmationNeeded="false" name="dev">
     <contextParameter comment="" name="data_dir" prompt="data_dir?" promptNeeded="false" repositoryContextId="_dHAzsNnSEeiIBOWq0qdbcg" type="id_String" value="/tmp/"/>
-    <contextParameter comment="" name="python" prompt="python?" promptNeeded="false" repositoryContextId="_dHAzsNnSEeiIBOWq0qdbcg" type="id_String" value="/Users/zhao/evn_py3/python3/bin/python"/>
     <contextParameter comment="" name="sparkshell" prompt="sparkshell?" promptNeeded="false" repositoryContextId="_dHAzsNnSEeiIBOWq0qdbcg" type="id_String" value="/Users/zhao/software/spark/spark-2.2.1-bin-hadoop2.7/bin/spark-shell"/>
     <contextParameter comment="" name="workspace" prompt="workspace?" promptNeeded="false" repositoryContextId="_dHAzsNnSEeiIBOWq0qdbcg" type="id_String" value="/Users/zhao/codebase/coinbase_price"/>
     <contextParameter comment="" name="mysql8_AdditionalParams" prompt="mysql8_AdditionalParams?" promptNeeded="false" repositoryContextId="_cNr4YNppEeiIBOWq0qdbcg" type="id_String" value="noDatetimeStringSync=true"/>
@@ -128,60 +137,4 @@
     <routinesParameter id="_qpvEgNfzEeiIBOWq0qdbcg" name="StringHandling"/>
     <routinesParameter id="_qpzV8NfzEeiIBOWq0qdbcg" name="Mathematical"/>
   </parameters>
-  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="32">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
-    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
-    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
-    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="coinbase_data_ingestion"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="dev"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_zyZ5MNfzEeiIBOWq0qdbcg"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
-    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
-    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
-    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
-    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
-    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
-    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="true"/>
-    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="true"/>
-    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tRunJob_1"/>
-  </node>
-  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="192">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_2" show="false"/>
-    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
-    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
-    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="forecast_price"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="dev"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_WvxaQNnREeiIBOWq0qdbcg"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
-    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
-    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
-    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
-    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
-    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
-    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="true"/>
-    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="true"/>
-    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tRunJob_2"/>
-  </node>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_1" offsetLabelX="0" offsetLabelY="0" source="tRunJob_1" target="tRunJob_2">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
-  </connection>
-  <note opaque="true" posX="384" posY="32" sizeHeight="64" sizeWidth="385" text="Entrypoint for automated data pipeline">
-    <elementParameter field="TEXT" name="FONT_SIZE" value="18"/>
-  </note>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_2" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
 </talendfile:ProcessType>

@@ -7,9 +7,9 @@
     <contextParameter xmi:id="_x_S7QNoAEeiIBOWq0qdbcg" comment="" name="sparkshell" prompt="sparkshell?" promptNeeded="false" type="id_String" value="/Users/zhao/software/spark/spark-2.2.1-bin-hadoop2.7/bin/spark-shell"/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_oT2fk9nSEeiIBOWq0qdbcg" confirmationNeeded="false" name="prod">
-    <contextParameter xmi:id="_oT2flNnSEeiIBOWq0qdbcg" comment="" name="data_dir" prompt="data_dir?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_oT2fldnSEeiIBOWq0qdbcg" comment="" name="workspace" prompt="workspace?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_8GK2sNnWEeiIBOWq0qdbcg" comment="" name="python" prompt="python?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_x_S7QdoAEeiIBOWq0qdbcg" comment="" name="sparkshell" prompt="sparkshell?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_oT2flNnSEeiIBOWq0qdbcg" comment="" name="data_dir" prompt="data_dir?" promptNeeded="false" type="id_String" value="/workspace/data/"/>
+    <contextParameter xmi:id="_oT2fldnSEeiIBOWq0qdbcg" comment="" name="workspace" prompt="workspace?" promptNeeded="false" type="id_String" value="/workspace/coinbase_price/"/>
+    <contextParameter xmi:id="_8GK2sNnWEeiIBOWq0qdbcg" comment="" name="python" prompt="python?" promptNeeded="false" type="id_String" value="python"/>
+    <contextParameter xmi:id="_x_S7QdoAEeiIBOWq0qdbcg" comment="" name="sparkshell" prompt="sparkshell?" promptNeeded="false" type="id_String" value="/workspace/tools/spark-2.2.1-bin-hadoop2.7/bin/spark-shell"/>
   </talendfile:ContextType>
 </xmi:XMI>

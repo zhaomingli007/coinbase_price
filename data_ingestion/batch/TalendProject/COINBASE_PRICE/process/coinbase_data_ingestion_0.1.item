@@ -2,15 +2,27 @@
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="dev" jobType="Standard">
   <context confirmationNeeded="false" name="prod">
     <contextParameter comment="" name="currentDate" prompt="currentDate?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter comment="" name="data_dir" prompt="data_dir?" promptNeeded="false" repositoryContextId="_dHAzsNnSEeiIBOWq0qdbcg" type="id_String" value=""/>
-    <contextParameter comment="" name="sparkshell" prompt="sparkshell?" promptNeeded="false" repositoryContextId="_dHAzsNnSEeiIBOWq0qdbcg" type="id_String" value=""/>
-    <contextParameter comment="" name="workspace" prompt="workspace?" promptNeeded="false" repositoryContextId="_dHAzsNnSEeiIBOWq0qdbcg" type="id_String" value=""/>
+    <contextParameter comment="" name="data_dir" prompt="data_dir?" promptNeeded="false" repositoryContextId="_dHAzsNnSEeiIBOWq0qdbcg" type="id_String" value="/workspace/data/"/>
+    <contextParameter comment="" name="sparkshell" prompt="sparkshell?" promptNeeded="false" repositoryContextId="_dHAzsNnSEeiIBOWq0qdbcg" type="id_String" value="/workspace/tools/spark-2.2.1-bin-hadoop2.7/bin/spark-shell"/>
+    <contextParameter comment="" name="workspace" prompt="workspace?" promptNeeded="false" repositoryContextId="_dHAzsNnSEeiIBOWq0qdbcg" type="id_String" value="/workspace/coinbase_price/"/>
+    <contextParameter comment="" name="mysql8_Port" prompt="mysql8_Port?" promptNeeded="false" repositoryContextId="_cNr4YNppEeiIBOWq0qdbcg" type="id_String" value="3306"/>
+    <contextParameter comment="" name="mysql8_Server" prompt="mysql8_Server?" promptNeeded="false" repositoryContextId="_cNr4YNppEeiIBOWq0qdbcg" type="id_String" value="coinbase-mysql"/>
+    <contextParameter comment="" name="mysql8_Login" prompt="mysql8_Login?" promptNeeded="false" repositoryContextId="_cNr4YNppEeiIBOWq0qdbcg" type="id_String" value="root"/>
+    <contextParameter comment="" name="mysql8_AdditionalParams" prompt="mysql8_AdditionalParams?" promptNeeded="false" repositoryContextId="_cNr4YNppEeiIBOWq0qdbcg" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter comment="" name="mysql8_Database" prompt="mysql8_Database?" promptNeeded="false" repositoryContextId="_cNr4YNppEeiIBOWq0qdbcg" type="id_String" value="coinbase"/>
+    <contextParameter comment="" name="mysql8_Password" prompt="mysql8_Password?" promptNeeded="false" repositoryContextId="_cNr4YNppEeiIBOWq0qdbcg" type="id_Password" value="vrEiLjLcMhZEN9Hte10BCA=="/>
   </context>
   <context confirmationNeeded="false" name="dev">
     <contextParameter comment="" name="currentDate" prompt="currentDate?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="data_dir" prompt="data_dir?" promptNeeded="false" repositoryContextId="_dHAzsNnSEeiIBOWq0qdbcg" type="id_String" value="/tmp/"/>
     <contextParameter comment="" name="sparkshell" prompt="sparkshell?" promptNeeded="false" repositoryContextId="_dHAzsNnSEeiIBOWq0qdbcg" type="id_String" value="/Users/zhao/software/spark/spark-2.2.1-bin-hadoop2.7/bin/spark-shell"/>
     <contextParameter comment="" name="workspace" prompt="workspace?" promptNeeded="false" repositoryContextId="_dHAzsNnSEeiIBOWq0qdbcg" type="id_String" value="/Users/zhao/codebase/coinbase_price"/>
+    <contextParameter comment="" name="mysql8_Port" prompt="mysql8_Port?" promptNeeded="false" repositoryContextId="_cNr4YNppEeiIBOWq0qdbcg" type="id_String" value="3307"/>
+    <contextParameter comment="" name="mysql8_Server" prompt="mysql8_Server?" promptNeeded="false" repositoryContextId="_cNr4YNppEeiIBOWq0qdbcg" type="id_String" value="127.0.0.1"/>
+    <contextParameter comment="" name="mysql8_Login" prompt="mysql8_Login?" promptNeeded="false" repositoryContextId="_cNr4YNppEeiIBOWq0qdbcg" type="id_String" value="root"/>
+    <contextParameter comment="" name="mysql8_AdditionalParams" prompt="mysql8_AdditionalParams?" promptNeeded="false" repositoryContextId="_cNr4YNppEeiIBOWq0qdbcg" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter comment="" name="mysql8_Database" prompt="mysql8_Database?" promptNeeded="false" repositoryContextId="_cNr4YNppEeiIBOWq0qdbcg" type="id_String" value="coinbase"/>
+    <contextParameter comment="" name="mysql8_Password" prompt="mysql8_Password?" promptNeeded="false" repositoryContextId="_cNr4YNppEeiIBOWq0qdbcg" type="id_Password" value="vrEiLjLcMhZEN9Hte10BCA=="/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
@@ -268,7 +280,7 @@
   </node>
   <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="416">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileList_1" show="false"/>
-    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.data_dir+&quot;/datalake/daily_price/&quot;+context.currentDate"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.data_dir+&quot;/datalake/daily_price/&quot;"/>
     <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
     <elementParameter field="CHECK" name="INCLUDSUBDIR" value="false"/>
     <elementParameter field="CLOSED_LIST" name="CASE_SENSITIVE" value="YES"/>
@@ -365,7 +377,7 @@
       <column comment="" key="false" length="100" name="time" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" sourceType="VARCHAR" type="id_Date" originalLength="100" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="var1" expression="Double.valueOf(row3.price) " type="id_Double"/>
         <mapperTableEntries name="var2" expression="TalendDate.parseDate(&quot;yyyy-MM-dd&quot;,row3.time,true) " type="id_Date"/>
@@ -388,11 +400,11 @@
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;127.0.0.1&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;3307&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;coinbase&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="gvNmxGfl/SVqSWfOmXU8vQ=="/>
+    <elementParameter field="TEXT" name="HOST" value="context.mysql8_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mysql8_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mysql8_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.mysql8_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kueGrMxlxCfWfqVkHH/iK2vs"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;prices&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE_OR_INSERT"/>
@@ -401,7 +413,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.mysql8_AdditionalParams"/>
     <elementParameter field="CHECK" name="EXTENDINSERT" value="true" show="false"/>
     <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)" show="false"/>
     <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100" show="false"/>

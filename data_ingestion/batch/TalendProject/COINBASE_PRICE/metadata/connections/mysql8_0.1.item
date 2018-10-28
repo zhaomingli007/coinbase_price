@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
-  <TalendMetadata:DatabaseConnection xmi:id="_2XudwNiEEeiIBOWq0qdbcg" name="mysql8" id="_OXHEgNiEEeiIBOWq0qdbcg" label="mysql8" dataPackage="_9j04ENiEEeiIBOWq0qdbcg" DatabaseType="MySQL" DriverClass="org.mariadb.jdbc.Driver" URL="jdbc:mariadb://127.0.0.1:3307/coinbase?noDatetimeStringSync=true" dbVersionString="MARIADB" Port="3307" Username="root" Password="vrEiLjLcMhZEN9Hte10BCA==" ServerName="127.0.0.1" DatasourceName="" FileFieldName="" SID="coinbase" SqlSynthax="" StringQuote="" NullChar="" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true" StandardSQL="true" SQLMode="false" UiSchema="">
+  <TalendMetadata:DatabaseConnection xmi:id="_2XudwNiEEeiIBOWq0qdbcg" name="mysql8" id="_OXHEgNiEEeiIBOWq0qdbcg" label="mysql8" dataPackage="_cjvn8NppEeiIBOWq0qdbcg" ContextMode="true" ContextId="_cNr4YNppEeiIBOWq0qdbcg" contextName="dev" DatabaseType="MySQL" DriverClass="org.mariadb.jdbc.Driver" URL="jdbc:mariadb://127.0.0.1:3307/coinbase?noDatetimeStringSync=true" dbVersionString="MARIADB" Port="context.mysql8_Port" Username="context.mysql8_Login" Password="context.mysql8_Password" ServerName="context.mysql8_Server" DatasourceName="" FileFieldName="" SID="context.mysql8_Database" SqlSynthax="" StringQuote="" NullChar="" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="context.mysql8_AdditionalParams" StandardSQL="true" SQLMode="false" UiSchema="">
     <taggedValue xmi:id="_2X0kYNiEEeiIBOWq0qdbcg" tag="Is Conn Need Reload" value="false"/>
     <taggedValue xmi:id="_2X-8cNiEEeiIBOWq0qdbcg" tag="package filter" value=""/>
     <taggedValue xmi:id="_2YGRMNiEEeiIBOWq0qdbcg" tag="Status" value=""/>
@@ -12,8 +12,8 @@
     <taggedValue xmi:id="_2YLwwNiEEeiIBOWq0qdbcg" tag="DB ProductName" value="MySQL"/>
     <taggedValue xmi:id="_2YLwwdiEEeiIBOWq0qdbcg" tag="DB ProductVersion" value="8.0.13"/>
     <taggedValue xmi:id="_2YLwwtiEEeiIBOWq0qdbcg" tag="DB IdentifierQuoteString" value="`"/>
-    <parameters xmi:id="_2X0kYdiEEeiIBOWq0qdbcg" key="CONN_PARA_KEY_USERNAME" value="root"/>
+    <parameters xmi:id="_2X0kYdiEEeiIBOWq0qdbcg" key="CONN_PARA_KEY_USERNAME" value="context.mysql8_Login"/>
     <parameters xmi:id="_8dKK8NiEEeiIBOWq0qdbcg" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
   </TalendMetadata:DatabaseConnection>
-  <orgomg.cwm.resource.relational:Catalog xmi:id="_9j04ENiEEeiIBOWq0qdbcg" name="coinbase" dataManager="_2XudwNiEEeiIBOWq0qdbcg"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_cjvn8NppEeiIBOWq0qdbcg" name="coinbase" dataManager="_2XudwNiEEeiIBOWq0qdbcg"/>
 </xmi:XMI>

@@ -75,7 +75,12 @@ Languages, frameworks and libraries used in this project:
 #### Data pipeline deploy and run
 
 ### Installation requirement and steps
-Requirment: Docker
+- Requirment: Docker
+- Install:
+    Download this script [install.sh](infra/install/install.sh) and run:
+    ```sh
+    bash install.sh
+    ```
 
 
 ### Future work
@@ -83,6 +88,8 @@ Requirment: Docker
     -  kubernete cluster deployment
     -  Security control (API permissions)
     -  Performance benchmark
+    - Setting up a front end HTTP server
+    - Configuring HTTPS
 - Data lake
     - HDFS/S3 in production
 - Data pipeline

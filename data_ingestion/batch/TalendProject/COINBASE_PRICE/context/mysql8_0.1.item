@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_cN8XENppEeiIBOWq0qdbcg" confirmationNeeded="false" name="dev">
+    <contextParameter xmi:id="_cN8XEdppEeiIBOWq0qdbcg" comment="" name="mysql8_Password" prompt="mysql8_Password?" promptNeeded="false" type="id_Password" value="vrEiLjLcMhZEN9Hte10BCA=="/>
+    <contextParameter xmi:id="_cN8XEtppEeiIBOWq0qdbcg" comment="" name="mysql8_Login" prompt="mysql8_Login?" promptNeeded="false" type="id_String" value="root"/>
+    <contextParameter xmi:id="_cN8XE9ppEeiIBOWq0qdbcg" comment="" name="mysql8_AdditionalParams" prompt="mysql8_AdditionalParams?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter xmi:id="_cN8XFNppEeiIBOWq0qdbcg" comment="" name="mysql8_Port" prompt="mysql8_Port?" promptNeeded="false" type="id_String" value="3307"/>
+    <contextParameter xmi:id="_cN8XFdppEeiIBOWq0qdbcg" comment="" name="mysql8_Database" prompt="mysql8_Database?" promptNeeded="false" type="id_String" value="coinbase"/>
+    <contextParameter xmi:id="_cN8XFtppEeiIBOWq0qdbcg" comment="" name="mysql8_Server" prompt="mysql8_Server?" promptNeeded="false" type="id_String" value="127.0.0.1"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_cN8XF9ppEeiIBOWq0qdbcg" confirmationNeeded="false" name="prod">
+    <contextParameter xmi:id="_cN8XGNppEeiIBOWq0qdbcg" comment="" name="mysql8_Password" prompt="mysql8_Password?" promptNeeded="false" type="id_Password" value="vrEiLjLcMhZEN9Hte10BCA=="/>
+    <contextParameter xmi:id="_cN8XGdppEeiIBOWq0qdbcg" comment="" name="mysql8_Login" prompt="mysql8_Login?" promptNeeded="false" type="id_String" value="root"/>
+    <contextParameter xmi:id="_cN8XGtppEeiIBOWq0qdbcg" comment="" name="mysql8_AdditionalParams" prompt="mysql8_AdditionalParams?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter xmi:id="_cN8XG9ppEeiIBOWq0qdbcg" comment="" name="mysql8_Port" prompt="mysql8_Port?" promptNeeded="false" type="id_String" value="3306"/>
+    <contextParameter xmi:id="_cN8XHNppEeiIBOWq0qdbcg" comment="" name="mysql8_Database" prompt="mysql8_Database?" promptNeeded="false" type="id_String" value="coinbase"/>
+    <contextParameter xmi:id="_cN8XHdppEeiIBOWq0qdbcg" comment="" name="mysql8_Server" prompt="mysql8_Server?" promptNeeded="false" type="id_String" value="coinbase-mysql"/>
+  </talendfile:ContextType>
+</xmi:XMI>

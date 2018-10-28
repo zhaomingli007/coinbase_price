@@ -14,3 +14,5 @@ target/
 **/temp/
 **/sqlPatterns
 **/routines/
+**/play_runtime
+**/docker_build

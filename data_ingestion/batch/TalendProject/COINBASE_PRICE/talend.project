@@ -98,6 +98,7 @@
       <relatedItems xmi:id="_VVnKKtf0EeiIBOWq0qdbcg" id="Mathematical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_3-udANnSEeiIBOWq0qdbcg" id="_dHAzsNnSEeiIBOWq0qdbcg" version="Latest" type="context"/>
       <relatedItems xmi:id="_2sQrkNn-EeiIBOWq0qdbcg" id="_OXHEgNiEEeiIBOWq0qdbcg" version="Latest" type="property"/>
+      <relatedItems xmi:id="_oFw5oNppEeiIBOWq0qdbcg" id="_cNr4YNppEeiIBOWq0qdbcg" version="Latest" type="context"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_0_x1ENnREeiIBOWq0qdbcg">
       <baseItem xmi:id="_0_ycINnREeiIBOWq0qdbcg" id="_WvxaQNnREeiIBOWq0qdbcg" version="0.1" type="job"/>
@@ -112,6 +113,7 @@
       <relatedItems xmi:id="_0_ycKdnREeiIBOWq0qdbcg" id="Mathematical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_AbSZoNnTEeiIBOWq0qdbcg" id="_dHAzsNnSEeiIBOWq0qdbcg" version="Latest" type="context"/>
       <relatedItems xmi:id="_bxR6YNnTEeiIBOWq0qdbcg" id="_OXHEgNiEEeiIBOWq0qdbcg" version="Latest" type="property"/>
+      <relatedItems xmi:id="_k2jysNppEeiIBOWq0qdbcg" id="_cNr4YNppEeiIBOWq0qdbcg" version="Latest" type="context"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_zNdVUNnxEeiIBOWq0qdbcg">
       <baseItem xmi:id="_zNdVUdnxEeiIBOWq0qdbcg" id="_wNHJwNnxEeiIBOWq0qdbcg" version="0.1" type="job"/>
@@ -140,7 +142,23 @@
       <relatedItems xmi:id="_ifIjm9oBEeiIBOWq0qdbcg" id="StringHandling" version="Latest" type="routine"/>
       <relatedItems xmi:id="_ifIjnNoBEeiIBOWq0qdbcg" id="TalendDate" version="Latest" type="routine"/>
       <relatedItems xmi:id="_ifIjndoBEeiIBOWq0qdbcg" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_qAVI4NppEeiIBOWq0qdbcg" id="_cNr4YNppEeiIBOWq0qdbcg" version="Latest" type="context"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_h6qXYNprEeiIBOWq0qdbcg">
+      <baseItem xmi:id="_h6qXYdprEeiIBOWq0qdbcg" id="_dtt10NprEeiIBOWq0qdbcg" version="0.1" type="job"/>
+      <relatedItems xmi:id="_h6qXYtprEeiIBOWq0qdbcg" id="_cNr4YNppEeiIBOWq0qdbcg" version="Latest" type="context"/>
+      <relatedItems xmi:id="_h6qXY9prEeiIBOWq0qdbcg" id="_dHAzsNnSEeiIBOWq0qdbcg" version="Latest" type="context"/>
+      <relatedItems xmi:id="_h6qXZNprEeiIBOWq0qdbcg" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_h6qXZdprEeiIBOWq0qdbcg" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_h6qXZtprEeiIBOWq0qdbcg" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_h6qXZ9prEeiIBOWq0qdbcg" id="TalendStringUtil" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_h6qXaNprEeiIBOWq0qdbcg" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_h6qXadprEeiIBOWq0qdbcg" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_h6qXatprEeiIBOWq0qdbcg" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_h6qXa9prEeiIBOWq0qdbcg" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_h6qXbNprEeiIBOWq0qdbcg" id="Mathematical" version="Latest" type="routine"/>
+    </ItemsRelations>
+    <deletedFolders>process/init</deletedFolders>
     <migrationTask xmi:id="_qdfYQNfzEeiIBOWq0qdbcg" id="org.talend.repository.hadoopcluster.model.migration.MoveHDFSAndHCatalogToHadoopFolderMigrationTask" breaks="5.3.0" version="5.3.0" status="ok"/>
     <migrationTask xmi:id="_qdfYQdfzEeiIBOWq0qdbcg" id="org.talend.designer.maven.ui.ConfigMavenRepositoryRemove" breaks="6.0.1" version="6.0.2" status="ok"/>
     <migrationTask xmi:id="_qdfYQtfzEeiIBOWq0qdbcg" id="org.talend.designer.core.generic.model.migration.ChangeDriverJarForProjectSetting" breaks="7.0.1" version="7.0.1" status="ok"/>
