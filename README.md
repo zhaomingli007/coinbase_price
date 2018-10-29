@@ -27,7 +27,6 @@
 #### Code structure
 #### Datalake structure
 ![](documents/datalake_struc.png)
-#### Workspace structure
 #### Database catalog and schema
 
 ### Architecture and techiques
@@ -56,8 +55,25 @@ Languages, frameworks and libraries used in this project:
 
 #### Data storage
 #### Data pipeline
-#### Web API
 
+#### Web API
+Demo IP: 54.202.166.199
+```sh
+    #Get last week/month prices movement
+    GET /prices/lastweek
+    curl -X GET http://54.202.166.199/prices/lastweek
+    GET /prices/lastmonth
+    curl -X GET http://54.202.166.199/prices/lastmonth
+    #Get prices between two customized dates
+    POST /prices/:start/:end
+    example: curl -X POST http://54.202.166.199/prices/3/2018-03-01/2018-04-01
+    #Get X days moving average prices between two customized dates
+    POST /prices/:xday/:start/:end  
+    example: curl -X POST http://54.202.166.199/prices/3/2017-12-01/2017-12-26
+    #Get 15 forecast prices
+    GET /prices/forecast
+    curl -X GET http://54.202.166.199/prices/forecast
+```
 #### Bitcorn price forecasting model
 ### Web API
 
@@ -77,11 +93,7 @@ Languages, frameworks and libraries used in this project:
 ### Installation requirement and steps
 - Requirment: Docker
 - Install:
-    Download this script [install.sh](infra/install/install.sh) and run:
-    ```sh
-    bash install.sh
-    ```
-
+    Download this script [install.sh](infra/install/install.sh) and follow and adapt the commands in `install.sh`
 
 ### Future work
 - Web API
